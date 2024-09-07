@@ -21,7 +21,6 @@ header {
     width: 90%;
     margin: auto auto;
     align-items: center;
-
 }
 
 input {
@@ -31,6 +30,17 @@ input {
     padding-left: 10%;
     box-shadow: 0 0 10px rgb(63, 211, 86);
     border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+input:focus {
+    background-color: #fff;
+    /* Fundo mais claro ao focar */
+    box-shadow: 0 0 5px rgb(63, 211, 86);
+    /* Sombra de foco */
+    border: 2px solid rgb(63, 211, 86);
+    /* Borda adicional para destaque */
 }
 
 button.add {
@@ -41,6 +51,13 @@ button.add {
     font-weight: bold;
     height: 120px;
     border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil */
+}
+
+button.add:hover {
+    background: rgb(14, 160, 14);
 }
 
 main {
@@ -72,7 +89,6 @@ main {
 .item.clicado .item-nome {
     text-decoration: line-through;
     color: rgb(56, 15, 95);
-
 }
 
 .item-icone {
@@ -101,6 +117,8 @@ main {
     padding: 10px;
     height: 80px;
     width: 100%;
+    cursor: pointer;
+
 }
 
 .mdi-check-circle {
